@@ -1,17 +1,31 @@
+import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 
 const columns = [
   {
     title: "Plateforme",
-    links: ["Digital", "Marketplace", "Business", "Connect"],
+    links: [
+      { label: "Digital", href: "/digital" },
+      { label: "Marketplace", href: "/marketplace" },
+      { label: "Business", href: "/business" },
+      { label: "Connect", href: "/connect" },
+    ],
   },
   {
     title: "Ressources",
-    links: ["Centre d'aide", "Devenir vendeur", "Devenir apporteur d'affaires"],
+    links: [
+      { label: "Centre d'aide", href: "/aide" },
+      { label: "Devenir vendeur", href: "/inscription" },
+      { label: "Devenir apporteur d'affaires", href: "/business" },
+    ],
   },
   {
     title: "Entreprise",
-    links: ["À propos", "Confidentialité", "Conditions d'utilisation"],
+    links: [
+      { label: "À propos", href: "/a-propos" },
+      { label: "Confidentialité", href: "/confidentialite" },
+      { label: "Conditions d'utilisation", href: "/conditions" },
+    ],
   },
 ];
 
@@ -35,13 +49,13 @@ export function Footer() {
               </h4>
               <ul className="mt-4 space-y-2">
                 {col.links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
                       className="text-sm text-mist transition-colors hover:text-orange"
                     >
-                      {link}
-                    </a>
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
