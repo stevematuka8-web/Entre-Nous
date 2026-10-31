@@ -55,24 +55,40 @@ export default function ConfidentialitePage() {
 
       <h2>Ce que nous ne faisons pas</h2>
       <ul>
-        <li>Nous ne vendons ni ne partageons vos données avec des tiers à des fins publicitaires.</li>
+        <li>Nous ne vendons pas vos données personnelles.</li>
         <li>Nous ne traitons aucune donnée bancaire ou de paiement : aucune transaction financière réelle n&apos;a lieu sur la plateforme à ce stade.</li>
       </ul>
 
       <h2>Cookies</h2>
       <p>
-        ENTRE-NOUS utilise uniquement des cookies{" "}
-        <strong>strictement nécessaires</strong> au fonctionnement du site :
-        un cookie de session déposé par Supabase Auth pour vous garder
-        connecté·e. Ce cookie n&apos;exige pas de consentement préalable au
-        regard de la réglementation (ePrivacy/RGPD), puisqu&apos;il est
-        indispensable au service que vous demandez en vous connectant.
+        Lors de votre première visite, un bandeau vous permet d&apos;accepter
+        ou de refuser les cookies non essentiels. Vous pouvez changer d&apos;avis
+        à tout moment via le lien <strong>« Gérer les cookies »</strong> en
+        bas de chaque page.
       </p>
+      <ul>
+        <li>
+          <strong>Essentiels (toujours actifs)</strong> — un cookie de
+          session déposé par Supabase Auth pour vous garder connecté·e.
+          Indispensable au fonctionnement du site, il n&apos;exige pas de
+          consentement préalable.
+        </li>
+        <li>
+          <strong>Mesure d&apos;audience</strong> — si vous l&apos;acceptez,
+          Google Analytics nous aide à comprendre l&apos;usage du site
+          (pages visitées, provenance), de façon anonymisée.
+        </li>
+        <li>
+          <strong>Publicité</strong> — si vous l&apos;acceptez, des
+          annonces peuvent être affichées via Google AdSense, qui peut
+          utiliser des cookies pour personnaliser les publicités
+          présentées.
+        </li>
+      </ul>
       <p>
-        Nous n&apos;utilisons <strong>aucun cookie publicitaire, de mesure
-        d&apos;audience ou de réseau social</strong>. Votre navigateur peut
-        également stocker localement (localStorage) quelques préférences
-        d&apos;affichage, qui ne quittent jamais votre appareil.
+        Nous utilisons également Vercel Analytics, un outil de mesure
+        agrégée qui ne dépose pas de cookie et ne nécessite pas de
+        consentement.
       </p>
 
       <h2>Vos droits</h2>

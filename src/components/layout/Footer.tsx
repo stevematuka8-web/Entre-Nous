@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
+import { ManageCookiesButton } from "@/components/layout/ManageCookiesButton";
 
 const columns = [
   {
@@ -58,6 +59,11 @@ export function Footer() {
                     </Link>
                   </li>
                 ))}
+                {col.title === "Entreprise" && (
+                  <li>
+                    <ManageCookiesButton />
+                  </li>
+                )}
               </ul>
             </div>
           ))}

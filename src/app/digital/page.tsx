@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { CatalogueGrid } from "@/components/catalogue/CatalogueGrid";
+import { AdSlot } from "@/components/analytics/AdSlot";
 import { digitalCategories, digitalServices } from "@/lib/mock-data";
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function DigitalPage() {
 
         <section className="px-6 pb-24">
           <div className="mx-auto max-w-6xl">
+            <AdSlot slot="1111111111" className="mb-10" />
             <CatalogueGrid services={digitalServices} categories={digitalCategories} />
           </div>
         </section>

@@ -5,6 +5,7 @@ import { getRelatedServices } from "@/lib/mock-data";
 import { ServiceCard } from "@/components/digital/ServiceCard";
 import { ContactPanel } from "@/components/digital/ContactPanel";
 import { ProviderCard } from "@/components/digital/ProviderCard";
+import { AdSlot } from "@/components/analytics/AdSlot";
 
 export function ServiceDetailView({
   service,
@@ -84,8 +85,9 @@ export function ServiceDetailView({
             </div>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-6">
             <ContactPanel service={service} />
+            <AdSlot slot="3333333333" />
           </div>
         </div>
       </section>

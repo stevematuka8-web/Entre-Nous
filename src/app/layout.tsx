@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { AuthProvider } from "@/components/providers/AuthProvider";
 import { CookieBanner } from "@/components/layout/CookieBanner";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { AdSenseScript } from "@/components/analytics/AdSenseScript";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,6 +33,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-nuit-gradient text-foreground">
         <AuthProvider>{children}</AuthProvider>
         <CookieBanner />
+        <GoogleAnalytics />
+        <AdSenseScript />
+        <Analytics />
       </body>
     </html>
   );

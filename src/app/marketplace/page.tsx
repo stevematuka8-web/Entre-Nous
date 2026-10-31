@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { CatalogueGrid } from "@/components/catalogue/CatalogueGrid";
+import { AdSlot } from "@/components/analytics/AdSlot";
 import { marketplaceCategories, marketplaceServices } from "@/lib/mock-data";
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function MarketplacePage() {
 
         <section className="px-6 pb-24">
           <div className="mx-auto max-w-6xl">
+            <AdSlot slot="2222222222" className="mb-10" />
             <CatalogueGrid services={marketplaceServices} categories={marketplaceCategories} />
           </div>
         </section>
