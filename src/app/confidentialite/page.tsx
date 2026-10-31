@@ -59,6 +59,22 @@ export default function ConfidentialitePage() {
         <li>Nous ne traitons aucune donnée bancaire ou de paiement : aucune transaction financière réelle n&apos;a lieu sur la plateforme à ce stade.</li>
       </ul>
 
+      <h2>Cookies</h2>
+      <p>
+        ENTRE-NOUS utilise uniquement des cookies{" "}
+        <strong>strictement nécessaires</strong> au fonctionnement du site :
+        un cookie de session déposé par Supabase Auth pour vous garder
+        connecté·e. Ce cookie n&apos;exige pas de consentement préalable au
+        regard de la réglementation (ePrivacy/RGPD), puisqu&apos;il est
+        indispensable au service que vous demandez en vous connectant.
+      </p>
+      <p>
+        Nous n&apos;utilisons <strong>aucun cookie publicitaire, de mesure
+        d&apos;audience ou de réseau social</strong>. Votre navigateur peut
+        également stocker localement (localStorage) quelques préférences
+        d&apos;affichage, qui ne quittent jamais votre appareil.
+      </p>
+
       <h2>Vos droits</h2>
       <p>
         Vous pouvez demander l&apos;accès, la correction ou la suppression de
