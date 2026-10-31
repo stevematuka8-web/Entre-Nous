@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nuit: #06040f;
+  --color-nuit-soft: #0b0920;
+  --color-nuit-card: #110d28;
+  --color-violet: #8b5cf6;
+  --color-violet-deep: #5b21b6;
+  --color-violet-bright: #a78bfa;
+  --color-orange: #fb7a2a;
+  --color-orange-soft: #ffb37a;
+  --color-mist: #c9c3e0;
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: var(--color-nuit);
+  --foreground: #f5f3ff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display), var(--font-sans), system-ui, sans-serif;
+  }
+
+  .bg-nuit-gradient {
+    background:
+      radial-gradient(60% 50% at 18% 8%, rgba(139, 92, 246, 0.22), transparent 60%),
+      radial-gradient(50% 45% at 85% 12%, rgba(251, 122, 42, 0.14), transparent 60%),
+      radial-gradient(70% 60% at 50% 100%, rgba(91, 33, 182, 0.25), transparent 60%),
+      var(--color-nuit);
+  }
+
+  .glass-card {
+    background: linear-gradient(160deg, rgba(139, 92, 246, 0.1), rgba(17, 13, 40, 0.55));
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(167, 139, 250, 0.18);
+  }
+
+  .glass-card-strong {
+    background: linear-gradient(160deg, rgba(139, 92, 246, 0.16), rgba(11, 9, 32, 0.75));
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border: 1px solid rgba(167, 139, 250, 0.22);
+  }
+
+  .neon-ring {
+    box-shadow:
+      0 0 0 1px rgba(167, 139, 250, 0.25),
+      0 20px 60px -15px rgba(139, 92, 246, 0.45);
+  }
+
+  .neon-ring-orange {
+    box-shadow:
+      0 0 0 1px rgba(251, 122, 42, 0.3),
+      0 20px 60px -15px rgba(251, 122, 42, 0.4);
+  }
+
+  .text-gradient-violet {
+    background: linear-gradient(90deg, #c4b5fd 0%, #8b5cf6 55%, #fb7a2a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .grid-overlay {
+    background-image:
+      linear-gradient(rgba(167, 139, 250, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(167, 139, 250, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .btn-glow {
+    background: linear-gradient(135deg, var(--color-violet) 0%, var(--color-orange) 130%);
+    box-shadow: 0 10px 30px -8px rgba(139, 92, 246, 0.55);
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
