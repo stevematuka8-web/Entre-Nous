@@ -44,14 +44,31 @@ export default function AProposPage() {
         de production.
       </p>
 
+      <h2>Qui est derrière ENTRE-NOUS</h2>
+      <p>
+        ENTRE-NOUS est un produit en développement de{" "}
+        <a
+          href="https://www.m2k-fintech.com"
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-violet-bright hover:text-orange"
+        >
+          M2K Fintech
+        </a>
+        , une entreprise technologique financière qui conçoit et fait
+        grandir plusieurs produits indépendants autour d&apos;un socle
+        commun de sécurité, de conformité et d&apos;intelligence
+        artificielle.
+      </p>
+
       <h2>Nous contacter</h2>
       <p>
         Une question, une suggestion ? Écrivez-nous à{" "}
         <a
-          href="mailto:contact@entre-nous.app"
+          href="mailto:service.commercial@m2k-fintech.fr"
           className="font-medium text-violet-bright hover:text-orange"
         >
-          contact@entre-nous.app
+          service.commercial@m2k-fintech.fr
         </a>
         .
       </p>

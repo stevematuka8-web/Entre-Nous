@@ -51,7 +51,16 @@ export default function ConfidentialitePage() {
           Supabase
         </a>
         , un fournisseur tiers d&apos;infrastructure (base de données
-        PostgreSQL et authentification).
+        PostgreSQL et authentification). Le site lui-même est hébergé par
+        Vercel Inc. ENTRE-NOUS est édité par M2K Fintech — voir le détail
+        complet dans nos{" "}
+        <a
+          href="/mentions-legales"
+          className="font-medium text-violet-bright hover:text-orange"
+        >
+          mentions légales
+        </a>
+        .
       </p>
 
       <h2>Ce que nous ne faisons pas</h2>
@@ -106,10 +115,10 @@ export default function ConfidentialitePage() {
         Vous pouvez demander l&apos;accès, la correction ou la suppression de
         vos données à tout moment en nous écrivant à{" "}
         <a
-          href="mailto:contact@entre-nous.app"
+          href="mailto:service.commercial@m2k-fintech.fr"
           className="font-medium text-violet-bright hover:text-orange"
         >
-          contact@entre-nous.app
+          service.commercial@m2k-fintech.fr
         </a>
         .
       </p>

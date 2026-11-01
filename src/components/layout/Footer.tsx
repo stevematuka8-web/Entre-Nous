@@ -26,6 +26,7 @@ const columns = [
       { label: "À propos", href: "/a-propos" },
       { label: "Confidentialité", href: "/confidentialite" },
       { label: "Conditions d'utilisation", href: "/conditions" },
+      { label: "Mentions légales", href: "/mentions-legales" },
     ],
   },
 ];
@@ -70,7 +71,18 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-6 text-xs text-mist/70 md:flex-row">
-          <span>© 2026 ENTRE-NOUS SaaS. Prototype — données fictives.</span>
+          <span>
+            © 2026 ENTRE-NOUS — un produit{" "}
+            <a
+              href="https://www.m2k-fintech.com"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium hover:text-orange"
+            >
+              M2K Fintech
+            </a>
+            . Prototype — données fictives.
+          </span>
           <span>Fait avec violet, orange et un peu de néon.</span>
         </div>
       </div>

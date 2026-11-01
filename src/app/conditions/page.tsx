@@ -67,10 +67,10 @@ export default function ConditionsPage() {
       <p>
         Pour toute question :{" "}
         <a
-          href="mailto:contact@entre-nous.app"
+          href="mailto:service.commercial@m2k-fintech.fr"
           className="font-medium text-violet-bright hover:text-orange"
         >
-          contact@entre-nous.app
+          service.commercial@m2k-fintech.fr
         </a>
         .
       </p>
