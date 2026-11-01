@@ -36,7 +36,7 @@ export function AuthShell({
 
         <div className="mt-6 flex items-center justify-center gap-2 text-xs text-mist/60">
           <ShieldCheck size={14} />
-          Prototype — données fictives, stockées uniquement dans votre navigateur.
+          Votre compte est réel et sécurisé — aucune transaction financière n&apos;est traitée à ce stade.
         </div>
       </div>
     </main>
