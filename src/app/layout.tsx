@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     siteName: "ENTRE-NOUS",
     title: "ENTRE-NOUS — SaaS",
     description: SITE_DESCRIPTION,
+    images: ["/og/transformation-numerique.jpg"],
   },
   twitter: {
     card: "summary",

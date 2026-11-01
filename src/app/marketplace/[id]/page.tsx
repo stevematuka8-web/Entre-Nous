@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceDetailView } from "@/components/catalogue/ServiceDetailView";
 import { marketplaceServices, getServiceById } from "@/lib/mock-data";
+import { categoryImages } from "@/lib/category-images";
 
 export function generateStaticParams() {
   return marketplaceServices.map((s) => ({ id: s.id }));
@@ -23,6 +24,7 @@ export async function generateMetadata({
     openGraph: {
       title: service.title,
       description: service.description,
+      images: [categoryImages[service.category]],
     },
   };
 }
