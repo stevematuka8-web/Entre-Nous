@@ -57,14 +57,11 @@ export async function POST(request: Request) {
   try {
     const ai = new GoogleGenAI({ apiKey });
     const response = await ai.models.generateContent({
-      model: "gemini-flash-latest",
+      model: "gemini-flash-lite-latest",
       contents,
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
         maxOutputTokens: 400,
-        // Disable extended "thinking" — this is a quick FAQ assistant, and
-        // thinking mode added ~40s of latency for no benefit here.
-        thinkingConfig: { thinkingBudget: 0 },
       },
     });
 
