@@ -91,6 +91,15 @@ export default function ConfidentialitePage() {
         consentement.
       </p>
 
+      <h2>Assistant de conversation</h2>
+      <p>
+        Le petit assistant disponible en bas à droite du site est propulsé
+        par l&apos;API Gemini de Google. Les messages que vous lui envoyez
+        sont transmis à Google pour générer une réponse, mais ne sont pas
+        conservés par ENTRE-NOUS ni réutilisés à d&apos;autres fins. Évitez
+        d&apos;y partager des informations sensibles.
+      </p>
+
       <h2>Vos droits</h2>
       <p>
         Vous pouvez demander l&apos;accès, la correction ou la suppression de

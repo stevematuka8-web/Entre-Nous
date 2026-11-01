@@ -6,6 +6,7 @@ import { AuthProvider } from "@/components/providers/AuthProvider";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { AdSenseScript } from "@/components/analytics/AdSenseScript";
+import { ChatWidget } from "@/components/chat/ChatWidget";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <CookieBanner />
         <GoogleAnalytics />
         <AdSenseScript />
+        <ChatWidget />
         <Analytics />
       </body>
     </html>
