@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "ENTRE-NOUS — SaaS",
   description:
     "La marketplace fintech nouvelle génération qui connecte prestataires, acheteurs et apporteurs d'affaires, dans le digital comme dans le business au quotidien.",
+  other: {
+    "google-adsense-account": "ca-pub-1747662964156156",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
