@@ -3,6 +3,7 @@ import { LegalPageShell } from "@/components/legal/LegalPageShell";
 
 export const metadata: Metadata = {
   title: "Politique de confidentialité — ENTRE-NOUS",
+  description: "Politique de confidentialité d'ENTRE-NOUS : données collectées, hébergement, cookies et vos droits.",
 };
 
 export default function ConfidentialitePage() {

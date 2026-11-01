@@ -3,6 +3,8 @@ import { LegalPageShell } from "@/components/legal/LegalPageShell";
 
 export const metadata: Metadata = {
   title: "À propos — ENTRE-NOUS",
+  description:
+    "Découvrez ENTRE-NOUS, la marketplace fintech qui connecte prestataires, acheteurs et apporteurs d'affaires dans le digital comme dans le business au quotidien.",
 };
 
 export default function AProposPage() {

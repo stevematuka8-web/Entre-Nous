@@ -5,6 +5,8 @@ import { ConnectClient } from "@/components/connect/ConnectClient";
 
 export const metadata: Metadata = {
   title: "ENTRE-NOUS CONNECT — Messagerie",
+  description:
+    "Échangez directement avec les prestataires et acheteurs via ENTRE-NOUS CONNECT, la messagerie intégrée à la marketplace.",
 };
 
 export default function ConnectPage() {

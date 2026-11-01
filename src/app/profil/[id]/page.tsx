@@ -18,7 +18,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const provider = getProviderById(id);
-  return { title: provider ? `${provider.name} — ENTRE-NOUS` : "Profil introuvable" };
+  if (!provider) return { title: "Profil introuvable" };
+  return {
+    title: `${provider.name} — ENTRE-NOUS`,
+    description: provider.bio,
+    openGraph: {
+      title: provider.name,
+      description: provider.bio,
+    },
+  };
 }
 
 export default async function ProviderProfilePage({

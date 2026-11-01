@@ -16,7 +16,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const service = getServiceById(id);
-  return { title: service ? `${service.title} — ENTRE-NOUS DIGITAL` : "Service introuvable" };
+  if (!service) return { title: "Service introuvable" };
+  return {
+    title: `${service.title} — ENTRE-NOUS DIGITAL`,
+    description: service.description,
+    openGraph: {
+      title: service.title,
+      description: service.description,
+    },
+  };
 }
 
 export default async function DigitalServiceDetailPage({

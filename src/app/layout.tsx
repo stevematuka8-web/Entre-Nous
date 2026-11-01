@@ -19,10 +19,27 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["500", "600", "700"],
 });
 
+const SITE_URL = "https://www.entre-nous.shop";
+const SITE_DESCRIPTION =
+  "La marketplace fintech nouvelle génération qui connecte prestataires, acheteurs et apporteurs d'affaires, dans le digital comme dans le business au quotidien.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "ENTRE-NOUS — SaaS",
-  description:
-    "La marketplace fintech nouvelle génération qui connecte prestataires, acheteurs et apporteurs d'affaires, dans le digital comme dans le business au quotidien.",
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: SITE_URL,
+    siteName: "ENTRE-NOUS",
+    title: "ENTRE-NOUS — SaaS",
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary",
+    title: "ENTRE-NOUS — SaaS",
+    description: SITE_DESCRIPTION,
+  },
   other: {
     "google-adsense-account": "ca-pub-1747662964156156",
   },

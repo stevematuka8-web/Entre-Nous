@@ -4,6 +4,8 @@ import { LegalPageShell } from "@/components/legal/LegalPageShell";
 
 export const metadata: Metadata = {
   title: "Centre d'aide — ENTRE-NOUS",
+  description:
+    "Questions fréquentes sur ENTRE-NOUS : inscription, rôles (prestataire, acheteur, apporteur d'affaires), paiements, messagerie et sécurité du compte.",
 };
 
 const faqs = [

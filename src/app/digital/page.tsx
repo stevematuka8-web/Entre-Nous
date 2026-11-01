@@ -7,6 +7,8 @@ import { digitalCategories, digitalServices } from "@/lib/mock-data";
 
 export const metadata: Metadata = {
   title: "ENTRE-NOUS DIGITAL — Services tech, IA & transformation numérique",
+  description:
+    "Trouvez un développeur, une agence ou une solution SaaS sur ENTRE-NOUS DIGITAL : IA, développement web et mobile, intégration API et transformation numérique.",
 };
 
 export default function DigitalPage() {

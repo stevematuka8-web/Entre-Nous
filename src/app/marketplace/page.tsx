@@ -7,6 +7,8 @@ import { marketplaceCategories, marketplaceServices } from "@/lib/mock-data";
 
 export const metadata: Metadata = {
   title: "ENTRE-NOUS MARKETPLACE — Produits, services et artisanat",
+  description:
+    "Vendez ou trouvez des produits physiques comme numériques, réservez des prestations et échangez directement avec les vendeurs sur ENTRE-NOUS MARKETPLACE.",
 };
 
 export default function MarketplacePage() {

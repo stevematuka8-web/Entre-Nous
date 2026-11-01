@@ -3,6 +3,7 @@ import { LegalPageShell } from "@/components/legal/LegalPageShell";
 
 export const metadata: Metadata = {
   title: "Conditions d'utilisation — ENTRE-NOUS",
+  description: "Conditions d'utilisation de la plateforme ENTRE-NOUS, actuellement en phase de prototype.",
 };
 
 export default function ConditionsPage() {
