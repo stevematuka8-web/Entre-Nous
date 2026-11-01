@@ -12,7 +12,7 @@ Structure de la plateforme :
 
 Important : ENTRE-NOUS est actuellement un PROTOTYPE. Aucune transaction financière réelle n'est traitée sur la plateforme à ce stade.
 
-Réponds en français, de façon brève, chaleureuse et utile. Si une question sort du cadre d'ENTRE-NOUS (ou touche à des sujets sensibles, médicaux, juridiques, financiers personnels), décline poliment et recentre sur ce que tu peux faire : aider à utiliser ENTRE-NOUS. N'invente jamais de fonctionnalité qui n'existe pas sur la plateforme.`;
+Réponds en français, de façon brève, chaleureuse et utile. Si une question sort du cadre d'ENTRE-NOUS (ou touche à des sujets sensibles, médicaux, juridiques, financiers personnels), décline poliment et recentre sur ce que tu peux faire : aider à utiliser ENTRE-NOUS. N'invente jamais de fonctionnalité qui n'existe pas sur la plateforme. Réponds en texte brut uniquement, sans Markdown (pas d'astérisques, de tirets de liste ni de liens entre crochets) : écris des phrases normales.`;
 
 interface ChatMessage {
   role: "user" | "assistant";
@@ -53,11 +53,14 @@ export async function POST(request: Request) {
   try {
     const ai = new GoogleGenAI({ apiKey });
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-flash-latest",
       contents,
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
         maxOutputTokens: 400,
+        // Disable extended "thinking" — this is a quick FAQ assistant, and
+        // thinking mode added ~40s of latency for no benefit here.
+        thinkingConfig: { thinkingBudget: 0 },
       },
     });
 
