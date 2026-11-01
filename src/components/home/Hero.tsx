@@ -16,7 +16,7 @@ export function Hero() {
           className="glass-card inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-mist"
         >
           <Sparkles size={14} className="text-orange" />
-          Prototype — mise en relation nouvelle génération
+          Mise en relation nouvelle génération
         </motion.div>
 
         <motion.h1
