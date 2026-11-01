@@ -87,7 +87,12 @@ export default function ConnexionPage() {
             />
             Se souvenir de moi
           </label>
-          <span className="cursor-not-allowed text-mist/50">Mot de passe oublié ?</span>
+          <Link
+            href="/mot-de-passe-oublie"
+            className="text-mist transition-colors hover:text-orange"
+          >
+            Mot de passe oublié ?
+          </Link>
         </div>
 
         {error && (

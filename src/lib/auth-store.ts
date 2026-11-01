@@ -37,7 +37,7 @@ function translateAuthError(message: string): string {
   if (/password should be at least/i.test(message)) {
     return "Le mot de passe est trop court (6 caractères minimum).";
   }
-  if (/rate limit/i.test(message)) {
+  if (/security purposes|rate limit/i.test(message)) {
     return "Trop de tentatives — réessayez dans quelques minutes.";
   }
   if (/email not confirmed/i.test(message)) {
@@ -71,6 +71,22 @@ export async function loginUser(email: string, password: string): Promise<AuthRe
 export async function logoutUser(): Promise<void> {
   const supabase = createClient();
   await supabase.auth.signOut();
+}
+
+export async function requestPasswordReset(email: string): Promise<AuthResult> {
+  const supabase = createClient();
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: `${window.location.origin}/reinitialiser-mot-de-passe`,
+  });
+  if (error) return { ok: false, error: translateAuthError(error.message) };
+  return { ok: true };
+}
+
+export async function updatePassword(newPassword: string): Promise<AuthResult> {
+  const supabase = createClient();
+  const { error } = await supabase.auth.updateUser({ password: newPassword });
+  if (error) return { ok: false, error: translateAuthError(error.message) };
+  return { ok: true };
 }
 
 export async function updateUserRoles(userId: string, roles: UserRole[]): Promise<boolean> {
