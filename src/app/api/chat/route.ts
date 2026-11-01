@@ -1,6 +1,10 @@
 import { GoogleGenAI } from "@google/genai";
 import { NextResponse } from "next/server";
 
+// Gemini responses can take 20-40s; Vercel's default serverless timeout
+// (10s on Hobby) would otherwise kill the function before it replies.
+export const maxDuration = 60;
+
 const SYSTEM_INSTRUCTION = `Tu es l'assistant virtuel d'ENTRE-NOUS, une marketplace fintech qui met en relation prestataires, acheteurs et apporteurs d'affaires.
 
 Structure de la plateforme :
